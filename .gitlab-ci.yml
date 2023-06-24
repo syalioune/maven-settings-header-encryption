@@ -14,6 +14,11 @@ cache:
   stage: test
   script:
     - 'mvn verify'
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - target/surefire-reports/TEST-*.xml
   except:
     variables:
       - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
@@ -26,6 +31,11 @@ deploy-to-gitlab:
   stage: deploy
   script:
     - 'mvn deploy -P gitlab-ci'
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - target/surefire-reports/TEST-*.xml
   only:
     variables:
       - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
