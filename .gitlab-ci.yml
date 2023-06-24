@@ -34,7 +34,7 @@ deploy-to-maven-central:
   stage: deploy
   script:
     - 'apt-get update -y && apt-get install -y gpg'
-    - 'cat $MAVEN_SETTINGS_SECURITY | base64 -d > $CI_PROJECT_DIR/.m2/settings-security.xml'
+    - 'cat $MAVEN_SETTINGS_SECURITY | base64 -d > /root/.m2/settings-security.xml'
     - 'cat $MAVEN_GPG_PRIVATE_KEY | base64 -d > /tmp/maven-central.key'
     - 'gpg --pinentry-mode loopback --passphrase "$(echo $MAVEN_GPG_PRIVATE_KEY_PASSPHRASE | base64 -d)" --import /tmp/maven-central.key'
     - 'mvn deploy -P maven-central'
