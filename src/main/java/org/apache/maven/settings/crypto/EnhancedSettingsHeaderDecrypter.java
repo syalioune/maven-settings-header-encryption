@@ -35,6 +35,12 @@ public class EnhancedSettingsHeaderDecrypter extends AbstractEventSpy {
     private static final Logger LOGGER = LoggerFactory.getLogger(EnhancedSettingsHeaderDecrypter.class);
 
 
+    /**
+     * Constructor.
+     *
+     * @param securityDispatcher
+     *          Maven security dispatcher to decrypt strings
+     */
     @Inject
     public EnhancedSettingsHeaderDecrypter(@Named("maven") SecDispatcher securityDispatcher) {
         this.securityDispatcher = securityDispatcher;

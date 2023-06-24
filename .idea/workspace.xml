@@ -7,7 +7,11 @@
     <list default="true" id="252dcd59-9ce2-4ea0-adaa-2c9d56b6c0fc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/maven.config" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/maven.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/EnhancedSettingsHeaderDecrypter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/EnhancedSettingsHeaderDecrypter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/SettingsHeaderDecryptionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/SettingsHeaderDecryptionException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +49,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/dev/breizhcamp/maven-settings-encryption/src/test/java/org/apache/maven/settings",
-    "last_opened_file_path": "C:/dev/breizhcamp/maven-settings-encryption/src/test/resources/settings",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/dev/breizhcamp/maven-settings-encryption/src/test/java/org/apache/maven/settings&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/breizhcamp/maven-settings-encryption/src/test/resources/settings&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\breizhcamp\maven-settings-encryption\src\test\resources\settings" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\breizhcamp\maven-settings-encryption" />
+    </key>
   </component>
-  <component name="RunManager" selected="Maven.maven-settings-encryption [clean,install]">
+  <component name="RunManager" selected="Maven.maven-settings-encryption - maven central prep ">
     <configuration name="EnhancedSettingsHeaderDecrypterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-settings-header-encryption" />
       <extension name="coverage">
@@ -150,6 +157,7 @@
       <item itemvalue="JUnit.EnhancedSettingsHeaderDecrypterTest.settingsWithThrownExceptionDuringDecryption" />
       <item itemvalue="JUnit.EnhancedSettingsHeaderDecrypterTest.unencryptedGeneralWagonHeaderTest" />
       <item itemvalue="Maven.maven-settings-encryption [clean,install]" />
+      <item itemvalue="Maven.maven-settings-encryption - maven central prep " />
     </list>
     <recent_temporary>
       <list>
@@ -172,6 +180,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -182,7 +201,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/EnhancedSettingsHeaderDecrypter.java</url>
-          <line>46</line>
+          <line>52</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

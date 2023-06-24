@@ -99,3 +99,28 @@ See [Advanced configuration to HTTP Wagon](https://maven.apache.org/guides/mini/
 ```shell
 mvn clean install
 ```
+
+# Publish to gitlab maven registry
+
+It requires a `${CI_JOB_TOKEN}` being generated during Gitlab CI job to work.
+
+The maven profile `gitlab-ci` contains the required configuration for publication.
+
+```shell
+mvn clean deploy -P gitlab-ci
+```
+
+# Publish to maven central
+
+It requires :
+
+* A [GPG key](https://www.gnupg.org/) to work. See [Maven central requirements](https://central.sonatype.org/publish/publish-maven)
+* The passphrase to the GPG key. See [settings.xml](./settings.xml) and `maven-central` server
+* [Sonatype JIRA](https://issues.sonatype.org/) credentials. See [settings.xml](./settings.xml) and `ossrh` server
+* Maven _master password_ for decrypting the project [settings.xml](./settings.xml)
+
+```shell
+mvn clean deploy -P maven-central
+```
+
+

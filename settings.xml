@@ -1,0 +1,24 @@
+<settings>
+    <servers>
+        <server>
+            <id>gitlab-maven</id>
+            <configuration>
+                <httpHeaders>
+                    <property>
+                        <name>Job-Token</name>
+                        <value>${CI_JOB_TOKEN}</value>
+                    </property>
+                </httpHeaders>
+            </configuration>
+        </server>
+        <server>
+            <id>maven-central</id>
+            <passphrase>{o9na1xgLFIoH1+sPEI4Srt2Jx0dGSkhHlyUGeMTEHr2Vq7IsuRg3Ha+Y2FKYF9Xt3/SSwNBznS5NiYAPJZBz4Q==}</passphrase>
+        </server>
+        <server>
+            <id>ossrh</id>
+            <username>syalioune</username>
+            <password>{iyIQR0wLtTYH8RLbirEUsebCrLXkGqApgSm1bmWGWDAEeeQZ8dScylhC9N+bIR0B}</password>
+        </server>
+    </servers>
+</settings>

@@ -18,18 +18,24 @@ cache:
     variables:
       - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
-# Verify merge requests using JDK8
-verify:jdk8:
+verify:
   extends:
     - .verify
 
-deploy:jdk8:
+deploy-to-gitlab:
   stage: deploy
   script:
-    - if [ ! -f ${GITLAB_CI_SETTINGS} ]; then
-      echo "CI settings missing\! If deploying to GitLab Maven Repository, please see https://docs.gitlab.com/ee/user/packages/maven_repository/index.html#create-maven-packages-with-gitlab-cicd for instructions.";
-      fi
-    - 'mvn deploy --settings ${GITLAB_CI_SETTINGS} -P gitlab-ci'
+    - 'mvn deploy -P gitlab-ci'
   only:
     variables:
       - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+deploy-to-maven-central:
+  stage: deploy
+  script:
+    - 'cat $MAVEN_SETTINGS_SECURITY | base64 -d > $CI_PROJECT_DIR/.m2/settings-security.xml'
+    - 'cat $MAVEN_GPG_PRIVATE_KEY | base64 -d > /tmp/maven-central.key'
+    - 'gpg --pinentry-mode loopback --passphrase $(echo $MAVEN_GPG_PRIVATE_KEY_PASSPHRASE | base64 -d) --import /tmp/maven-central.key'
+    - 'mvn deploy -P maven-central'
+  rules:
+    - when: manual
