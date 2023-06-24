@@ -1,0 +1,15 @@
+<settings>
+    <servers>
+        <server>
+            <id>wagon</id>
+            <configuration>
+                <httpHeaders>
+                    <property>
+                        <name>my-header</name>
+                        <value>my-encrypted-value</value>
+                    </property>
+                </httpHeaders>
+            </configuration>
+        </server>
+    </servers>
+</settings>

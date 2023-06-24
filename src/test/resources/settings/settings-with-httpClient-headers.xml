@@ -1,0 +1,27 @@
+<settings>
+    <servers>
+        <server>
+            <id>httpClient</id>
+            <configuration>
+                <httpConfiguration>
+                    <all>
+                        <headers>
+                            <property>
+                                <name>all-header-name</name>
+                                <value>all-header-value</value>
+                            </property>
+                        </headers>
+                    </all>
+                    <get>
+                        <headers>
+                            <property>
+                                <name>get-header-name</name>
+                                <value>get-header-value</value>
+                            </property>
+                        </headers>
+                    </get>
+                </httpConfiguration>
+            </configuration>
+        </server>
+    </servers>
+</settings>
