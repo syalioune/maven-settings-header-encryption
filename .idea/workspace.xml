@@ -7,11 +7,6 @@
     <list default="true" id="252dcd59-9ce2-4ea0-adaa-2c9d56b6c0fc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/maven.config" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/maven.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/EnhancedSettingsHeaderDecrypter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/EnhancedSettingsHeaderDecrypter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/SettingsHeaderDecryptionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/apache/maven/settings/crypto/SettingsHeaderDecryptionException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
